@@ -17,7 +17,7 @@ function Login() {
   const login = (e) => {
     e.preventDefault(); // Prevent form reload
     axios
-      .post("http://localhost:8080/login", {
+      .post("https://employeeapi-3v0p.onrender.com/login", {
         email: credentials.email,
         password: credentials.password,
       })

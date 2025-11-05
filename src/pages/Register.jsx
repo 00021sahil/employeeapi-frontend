@@ -22,7 +22,7 @@ function Register() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8080/register", {
+      .post("https://employeeapi-3v0p.onrender.com/register", {
         name: employee.name,
         email: employee.email,
         password: employee.password,

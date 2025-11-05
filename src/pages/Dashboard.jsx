@@ -10,7 +10,7 @@ function Dashboard() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/getAll")
+      .get("https://employeeapi-3v0p.onrender.com/getAll")
       .then((response) => {
         setEmployees(response.data);
         setLoading(false);

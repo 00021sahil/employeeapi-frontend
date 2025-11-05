@@ -18,7 +18,7 @@ function EmployeeProfile() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/getById?id=${id}`)
+      .get(`https://employeeapi-3v0p.onrender.com/getById?id=${id}`)
       .then((response) => setEmployee(response.data))
       .catch(() => alert("something went wrong during fetch profile"));
   }, []);
