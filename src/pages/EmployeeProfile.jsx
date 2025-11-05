@@ -18,7 +18,7 @@ function EmployeeProfile() {
 
   useEffect(() => {
     axios
-      .get(`https://employeeapi-3v0p.onrender.com/getById?id=${id}`)
+      .get(`https://employeeapi-jnhc.onrender.com/getById?id=${id}`)
       .then((response) => setEmployee(response.data))
       .catch(() => alert("something went wrong during fetch profile"));
   }, []);
@@ -27,7 +27,7 @@ function EmployeeProfile() {
     e.preventDefault();
 
     axios
-      .put("http://localhost:8080/update", {
+      .put("https://employeeapi-jnhc.onrender.com/update", {
         id: employee.id,
         name: employee.name,
         email: employee.email,
